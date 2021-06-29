@@ -35,3 +35,10 @@
 - `python manage.py makemigrations`
 - `python manage.py migrate`
 - `python manage.py runserver`
+
+## branch 분할
+- `git branch '브랜치이름`
+- `git checkout '브랜치이름`
+- `git pull '브랜치이름`
+
+
