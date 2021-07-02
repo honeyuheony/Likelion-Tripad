@@ -1,0 +1,296 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+.nanumpenscript * {
+  font-family: 'Nanum Pen Script', cursive; 
+}
+
+@font-face {
+  font-family: 'NanumBarunpen';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; 
+}
+body {
+  background-color: #FEFFD6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  font-family: 'NanumBarunpen'; 
+}
+
+div {
+    text-align: center;
+}
+img {
+    border: 0; }
+
+button {
+    background: none;
+    border: 0;
+    font-family: 'NanumBarunpen'; 
+}
+
+.hidden {
+    display: none; }
+
+.nav {
+  width: auto;
+  height: 65px;
+  background: #FFFFFF;
+}
+.nav img {
+  position: relative;
+  left: -750px;
+  top: 0px;
+  text-align: left;
+}
+.nav .logout {
+  position: relative;
+  left: 750px;
+  top: -15px;
+  width: 130px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #393D46;
+  color: #FFFFFF;
+}
+.nav .mypage {
+  position: relative;
+  left: 1510px;
+  top: 15px;
+}
+.profile {
+    display: block;
+    width:1920px;
+    height: 1080px;
+    /* background-color: aquamarine; */
+    background-size: cover;
+    margin: auto;
+    }
+    .profile .map_search{
+      background-color: #FFFFFF;
+      border: none;
+      border-radius: 15px;
+      float: left;
+      width: 15%;
+      height:4%;
+      margin-left: 50%;
+      margin-top : 5%;
+      margin-bottom: 0.7%;
+    }
+    .profile .map_search img{
+      margin-top: 2%;
+    }
+    .profile .map_search input{
+      border: none;
+      float:right;
+      margin-top: 2%;
+      width: 80%;
+      font-size: 25px;
+    }
+    .profile .map{
+        background-color: #FFFFFF;
+        float: left;
+        margin-left: 5%;
+        width: 60%;
+        height: 65%;  
+    }
+    .profile .map img{
+      width: 100%;
+      height: 100%;  
+  }
+    .profile .caption{
+        width: 25%;
+        height: 70%;
+        background-color: #FFFFFF;
+        float: right;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left;
+        border-radius: 105px 0px 0px 0px;
+    }
+    .profile .caption h4 {
+        font-size: 25px;
+        margin-bottom: 16px; }
+
+    .profile .caption .icon{
+      border: none;
+      font-size: 64px;
+      line-height: 74px;
+      width: 25%;
+    }
+    .profile .caption .title{
+      border: none;
+      margin-top: 15px;
+      margin-left: 30px;
+      font-size: 48px;
+      line-height: 50px;
+      width: 80%;
+    }
+    .profile .caption .time{
+      border: none;
+      margin: 5px;
+      margin-left: 30px;
+      font-size: 28px;
+      line-height: 32px;
+      width: 40%;
+    }
+    .profile .caption input{
+      border: none;
+      margin: 5px;
+      margin-left: 30px;
+      font-size: 28px;
+      line-height: 32px;
+      width: 80%;
+    }
+    .profile .caption .add {
+      background-color: #FDFF9E;
+      position: relative;
+      left: 330px;
+      top: 130px;
+      width: 100px;
+      height: 60px;
+      font-size: 24px;
+    }
+    .profile .caption li{
+      text-align: center;
+    }
+    .profile .caption .num{
+      width: 450px;
+      height: 75px;
+      font-size: 32px;
+      
+      line-height: 37px;
+    }
+    .profile .caption .text{
+      color: #868383;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .profile .share {
+      position: absolute;
+      top: 1100px;
+      left: 0px;
+      float: left;
+      text-align: left;
+      margin: 10px;
+    }
+    .profile .share button{
+      position: static;
+      top: 20px;
+      width:100px;
+      height: 50px;
+      background-color: #9BAAD3;
+      border-radius: 10px;
+      font-size: 24;
+      color: #FFFFFF;
+      margin: 20px;
+    }
+    .profile .share img {
+      position: relative;
+      top: 20px;
+      margin: 5px;
+    }
+    .profile .content{
+      position: relative;
+      top: 50px;
+      left: -900px;
+    }
+    .profile .content li{
+      display: inline-flex;
+      flex-flow: column;
+    }
+    .profile .content .num{
+      align-self: center;
+      text-align: center;
+      width: 32px;
+      height: 32px;
+      background-color: #C4C4C4;
+      border-radius: 50%;
+    }
+    .profile .content .selected{
+      background-color: #868383;
+    }
+    .profile .content .text{
+      align-self: center;
+      width: 100px;
+      height: 35px;
+    }
+    .profile .next {
+      background-color: #FDFF9E;
+      position: relative;
+      left: 800px;
+      top: 50px;
+      width: 100px;
+      height: 60px;
+      font-size: 24px;
+    }
+  
+/* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 400px; /* Could be more or less, depending on screen size */     
+      height: 300px;                     
+  }
+  .modal-content img {
+    margin: 5px;
+    width: 48px;
+    height: 48px;
+  }
+  /* The Close Button */
+  .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+/* body {
+    background-image: url("../img/rainbow.jpg");
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+} */
+/* .thumbnail {
+    background-color:#fff;
+    border: rgb(0 0 0 / 15%);
+    ;
+    box-shadow: 10px 20px 100px rgb(0 0 0 / 15%);
+    margin:10px;
+    width:150px;
+    height:150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .thumbnail.round{
+    border-radius: 10%;
+  }
+  .thumbnail.circle{
+    border-radius: 100%;
+  } */
