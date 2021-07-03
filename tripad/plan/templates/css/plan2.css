@@ -113,10 +113,6 @@ button {
         text-align: left;
         border-radius: 105px 0px 0px 0px;
     }
-    .profile .caption h4 {
-        font-size: 25px;
-        margin-bottom: 16px; }
-
     .profile .caption .icon{
       border: none;
       font-size: 64px;
@@ -158,23 +154,30 @@ button {
     }
     .profile .caption li{
       text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
     .profile .caption .num{
       width: 450px;
-      height: 75px;
+      height: 50px;
       font-size: 32px;
-      
       line-height: 37px;
+      margin: 20px;
+    }
+    .profile .caption .table{
+      border-top: 1px solid #000000;
+      border-bottom: 1px solid #000000;
     }
     .profile .caption .text{
       color: #868383;
       font-size: 24px;
       line-height: 28px;
+      margin: 20px;
     }
     .profile .share {
-      position: absolute;
-      top: 1100px;
-      left: 0px;
+      position: relative;
+      top: 50px;
+      left: 00px;
       float: left;
       text-align: left;
       margin: 10px;
@@ -223,7 +226,7 @@ button {
     .profile .next {
       background-color: #FDFF9E;
       position: relative;
-      left: 800px;
+      left: 600px;
       top: 50px;
       width: 100px;
       height: 60px;
@@ -253,6 +256,38 @@ button {
       width: 400px; /* Could be more or less, depending on screen size */     
       height: 300px;                     
   }
+  .mobile-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px; /* Could be more or less, depending on screen size */     
+    height: 300px;                     
+  }
+  .mobile-content button{
+      width:60px;
+      height:30px;
+      background: #FFFFFF;
+      border: 2px solid #E5E5E5;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-size: 24;                 
+  }
+  .mobile-content .selected {
+    background: #FEDC85;             
+  }
+  .caption .mobile-content input {
+    width : 300px;
+    height : 50px;
+    border: 1px solid #000000;
+    box-sizing: border-box; 
+    margin: 5px;            
+  }
+  .pay-table {
+    border: 1px;
+    border-color: black;
+  }
+  
   .modal-content img {
     margin: 5px;
     width: 48px;
