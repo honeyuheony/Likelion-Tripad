@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/map.css">
     <script type="text/javascript" src="./js/main.js"></script>
 
     <title>Document</title>
@@ -31,7 +31,7 @@
                 <br>
                 <button id="icon_btn" class="icon"><img src="img/pin/Anchor.png"></button>
                 <div id="iconModal" class="modal">
-                    <div class="modal-content">
+                    <div class="modal-content" id="icon-content">
                         <span id="icon_close" class="close">&times;</span> 
                         <br><br>
                         <img src="img/pin/Anchor.png">
@@ -60,18 +60,32 @@
                 <input type="text" placeholder="교통수단">
                 <button id="mobile_btn" class="transportation">Search</button>
                 <div id="mobileModal" class="modal">
-                    <div class="modal-content">
+                    <div class="modal-content mobile-content">
                         <span id="mobile_close" class="close">&times;</span> 
-    
+                        <br><br>
+                        <button class="selected">대중교통</button>
+                        <button>자동차</button>
+                        <button>도보</button>
+                        <button>자전거</button>
+                        <p>오늘 오후 1:30 출발</p>
+                        <input placeholder=" 출발지 입력">
+                        <input placeholder=" 목적지 입력">
+                        <br>
+                        <button>길찾기</button>
                     </div>
                 </div>
                 <input type="text" placeholder="태그">
                 <input type="text" placeholder="경비">
                 <button id="pay_btn" class="price">Search</button>
                 <div id="payModal" class="modal">
-                    <div class="modal-content">
-                        <span id="pay_close" class="close">&times;</span> 
+                    <div class="modal-content pay-content">
+                        <span id="pay_close" class="close">&times;</span>
                         <p>hihi</p>
+                        <ul>
+                            <li>
+                                <p></p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <input type="text" placeholder="메모">
