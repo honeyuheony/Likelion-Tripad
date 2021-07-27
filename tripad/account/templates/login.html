@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    <head>
+        <link rel="stylesheet" href="{% static css/main.css %}">
+        <style>
+        </style>
+    </head>
+    
+    <body>
+        <div>
+            <form id="loginform" action="" method="POST">
+                <div id="wrapper" style="padding: 50px 10px 50px 10px;">
+                    <section>
+                        <h1>로그인</h1>
+                      </section>
+                    <br>
+                    <a>아이디
+                    <br>
+                    <br>
+                    <input type="text" name="member_id" id="member_id" value="">
+                    </a> 
+                    <br>
+                    <br>
+                    <a>비밀번호
+                    <br>
+                    <br>
+                    <input type="password" name="password" id="password" value="">
+                    </a>
+                    <br>
+                    <br>
+                    <!-- <input type="checkbox" name="nowlogin" value="" checked>로그인 상태 유지 -->
+                    <br>
+                    <br>
+                    <button type="submit" class="loginbtn" value="login"><a style="color: rgb(0, 0, 0);">로그인</a></button>
+                </div>
+            </form>
+    
+        </div>
+    
+    </body>
+{% endblock %}

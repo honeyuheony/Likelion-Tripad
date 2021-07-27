@@ -1,0 +1,22 @@
+.plan{
+    float:left;
+    margin-top: 40px;
+    margin-left: 35px;
+    background-image: url(review.jpg);
+    width: 30%;
+    height: 400px;
+    margin-left: 200;
+    text-align: center;
+    object-fit: cover;
+}
+.review{
+    float:right;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-image: url(reservation.jpg);
+    width: 30%;
+    height: 400px;
+    margin-right: 200;
+    text-align: center;
+    object-fit: cover;
+}

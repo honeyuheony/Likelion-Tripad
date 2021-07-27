@@ -1,0 +1,84 @@
+<html>
+
+    <head>
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        
+        <style>
+            /* 글씨체는 일단 무난한 나눔 고딕체로 했는데 여행 웹사이트인만큼 
+            만들어지는 디자인에 따라 글씨체가 바뀔수도 있고 페이지마다 포인트 글씨체는 달라질 수 있다고 생각해요!! */
+            body{font-family:'Nanum Gothic', sans-serif;}
+        </style>
+
+    </head>
+    
+    <body>
+        <!-- 네비게이션 바 -->
+        <header>
+            <div style="float: left;" >
+            <!-- 로고 추가했습니다 -->
+            <a class="logo" href="main.html">
+                <img src="logo.png" alt="" width="40" height="40">
+            </a>
+            <a href="main.html">
+                <img src="TRIPAD.jpg">
+            </a>
+        </div>
+            <!-- 강의에서 로그인 안되어 있으면 <로그인>보이게, 로그인 되어있으면 <로그아웃>보이게 했던 부분 따왔습니다
+            백엔드 상황 보고 수정 필요할 것 같아요!! -->
+        <div style="float: right;">
+             <!-- {% if not user.is_authenticated %} -->
+              <li><a class="login" href="{%url 'login' %}">Login</a></li>
+              <!-- {% endif %}
+
+              {% if user.is_authenticated %} -->
+              <li><a class="logout" href="{%url 'logout' %}">Logout</a></li>
+              <!-- {% endif %}
+
+              {% if not user.is_authenticated %} -->
+              <li><a class="signup" href="{%url 'signup' %}">Signup</a></li>
+              <!-- {% endif %} -->
+              <a class="myaccount">
+                <img src="myaccount.JPG" alt="" width="30" height="30">
+            </a>
+        </div>    
+        </header>
+        
+        <!-- 페이지 내용이 들어감 -->
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <ul class="developer">
+                <h3>developer</h3>
+                <li>김우헌</li>
+                <li>안효준</li>
+                <li>박선민</li>
+                <li>고다혜</li>
+            </ul>
+            <ul class="Company">
+                <h3>company</h3>
+                <li>한국기술교육대학교</li>
+                <li>멋쟁이 사자처럼 9기</li>
+                <li>처음처럼</li>
+            </ul>
+        </div>
+    </body>
+    
+
+    <script>
+                var alert_select_value = function (select_obj){
+                // 우선 selectbox에서 선택된 index를 찾고 
+                var selected_index = select_obj.selectedIndex;
+                // 선택된 index의 value를 찾고 
+                var selected_value = select_obj.options[selected_index].value;
+                // 원하는 동작을 수행한다. 여기서는 그냥 alert해주는 식으로만 처리함. 
+                alert(selected_value);
+            };
+    </script>
+</html>

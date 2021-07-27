@@ -1,0 +1,73 @@
+#recommend_title{ 
+    font-size: 30px;
+    text-align: center;
+}
+#recommend_sub{
+
+    font-size: 18px;
+    color: gray;
+    text-align: center;
+}
+
+.search_box{
+    margin-top: 30px;
+    width: 1300px;
+    height: 45px;
+
+}
+
+.search_img{
+    margin-top: 35px;
+    height: 20px; 
+    width: 100px; 
+    margin-left: 3px;
+    
+}
+.recommend1{
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: red;
+    width: 400px;
+    height: 300px;
+}
+.recommend2{
+    float: left;
+    margin-top: 100px;
+    margin-left: 40px;
+    background-color: orange;
+    width: 400px;
+    height: 300px;
+}
+.recommend3{
+    float: left;
+    margin-top: 100px;
+    margin-left: 40px;
+    background-color: yellow;
+    width: 400px;
+    height: 300px;
+}
+.recommend4{
+    float: left;
+    margin-top: 40px;
+    margin-left: 100px;
+    background-color: green;
+    width: 400px;
+    height: 300px;
+}
+.recommend5{
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color: blue;
+    width: 400px;
+    height: 300px;
+}
+.recommend6{
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color: purple;
+    width: 400px;
+    height: 300px;
+}

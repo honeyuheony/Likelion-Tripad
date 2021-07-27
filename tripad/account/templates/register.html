@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="main.css">
+        <style>
+            body{font-family:'Nanum Gothic', sans-serif;}
+        </style>
+    </head>
+    <body>
+        <div id="wrapper" style="padding: 50px 10px 50px 10px;">
+        <section>
+            <h1>회원가입</h1>
+          </section>
+          <section>
+            <form name="login" action="index.html" method="post">
+              아이디확인<br>
+              <input type="text" name="member_id" id="member_id" placeholder="아이디 입력" >
+              <br>
+              비밀번호<br> 
+              <input type="password" id="password1" value="" onkeyup="checkPwd()"><br>
+              비밀번호 재확인<br> 
+              <input type="password" id="password2" value="">
+              <input type="button" onclick="passwordcheck()"  value="확인">
+              
+              <br><br>
+              이름<br>  <input type="text" id="name" name="name" value=""> <br>
+              닉네임<br>  <input type="text" id="nickname" name="nickname" value=""> <br>
+              이메일<br><input type="email" id="email" name="email" placeholder="email@gmail.com"><br><br>
+              휴대전화<br>  
+              <input type="text" name="phone" id="phone" placeholder="010-****-****">
+              <!-- <input type="button" name="certification" value="인증번호 받기"><br>
+              <input type="text" name="certification" placeholder="인증번호를 입력하세요">
+              <input type="button" name="certification" value="확인"><br><br> -->
+              <br>
+              <br>
+              <input type="submit" name="submit" value="회원가입">
+              
+            </form>
+          </section>
+        </div>
+
+    </body>
+
+    <script>
+        function passwordcheck() {
+          var p1 = document.getElementById('password1').value;
+          var p2 = document.getElementById('password2').value;
+          if( p1 != p2 ) {
+            alert("비밀번호가 일치 하지 않습니다");
+            return false;
+          } else{
+            alert("비밀번호가 일치합니다");
+            return true;
+          }
+    
+        }
+      </script>
+
+{% endblock %}
